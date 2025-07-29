@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.section-title-3 {
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section-3 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+}
+
+.hero-overlay-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content-3 {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content-3 h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Impact Section */
+.impact-card-3 {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.impact-card-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.impact-icon-3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Features Section */
+.features-section-3 {
+  background-color: #1a2930;
+}
+
+.feature-card-3 {
+  background-color: #233640; 
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  color: #fff;
+}
+
+.feature-card-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.feature-icon-3 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #4CAF50;
+}
+
+/* CTA Section */
+.cta-section-3 {
+  background: linear-gradient(to right, #4CAF50, #2E7D32);
+}
