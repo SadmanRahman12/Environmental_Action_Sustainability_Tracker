@@ -1,43 +1,33 @@
-
 import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import './Dashboard.css';
 
-const Dashboard = () => {
+const Dashboard = ({ name }) => {
   return (
     <div className="dashboard">
       <div className="dashboard-header">
-        <h1>Welcome, Eco-Warrior!</h1>
-        <p>Your journey to a more sustainable lifestyle starts here.</p>
+        <h1>Welcome back, {name}!</h1>
+        <p>Monitor your progress and discover new ways to live sustainably.</p>
       </div>
       <div className="dashboard-summary">
         <div className="summary-card">
-          <h3>Impact Summary</h3>
-          <p>CO2 Reduced: <strong>150 kg</strong></p>
-          <p>Water Saved: <strong>500 L</strong></p>
-          <p>Waste Diverted: <strong>25 kg</strong></p>
+          <h3>Carbon Footprint</h3>
+          <p>5.2 tons CO2e</p>
+          <span className="change increase">+5% since last week</span>
         </div>
         <div className="summary-card">
-          <h3>Your Eco-Points</h3>
-          <p>You have earned <strong>1,200</strong> points!</p>
-          <a href="#">Redeem Rewards</a>
+          <h3>Habits Tracked</h3>
+          <p>5 ongoing</p>
+          <span className="change decrease">-2% since last week</span>
         </div>
       </div>
+      <div className="dashboard-nav">
+        <Link to="/dashboard">Home</Link>
+        <Link to="/dashboard/profile">Profile</Link>
+        <Link to="/dashboard/settings">Settings</Link>
+      </div>
       <div className="dashboard-features">
-        <div className="feature-card">
-          <h3>Carbon Footprint</h3>
-          <p>Calculate and track your carbon emissions.</p>
-          <a href="#">Get Started</a>
-        </div>
-        <div className="feature-card">
-          <h3>Habit Tracker</h3>
-          <p>Log your eco-friendly habits and build streaks.</p>
-          <a href="#">Track Habits</a>
-        </div>
-        <div className="feature-card">
-          <h3>Green Events</h3>
-          <p>Find and join local environmental events.</p>
-          <a href="#">Explore Events</a>
-        </div>
+        <Outlet />
       </div>
     </div>
   );

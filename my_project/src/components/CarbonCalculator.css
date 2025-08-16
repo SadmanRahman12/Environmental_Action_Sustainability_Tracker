@@ -1,0 +1,140 @@
+.carbon-calculator-container {
+  padding: 2rem;
+  background: #f4f7f6;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.carbon-calculator-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.carbon-calculator-header h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.carbon-calculator-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.carbon-calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #34495e;
+  font-size: 1.1rem;
+}
+
+.form-group input {
+  padding: 0.8rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #27ae60;
+  outline: none;
+}
+
+.btn-calculate {
+  padding: 1rem;
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-calculate:hover {
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+}
+
+.results-container {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.results-container h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.total-result {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.results-breakdown {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.tips-container {
+  margin-top: 1.5rem;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.tips-container h4 {
+  font-size: 1.4rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.tips-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-container li {
+  background: #e9f7ef;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
