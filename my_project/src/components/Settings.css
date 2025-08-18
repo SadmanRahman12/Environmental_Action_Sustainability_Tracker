@@ -1,0 +1,28 @@
+.settings-page {
+  padding: 2rem;
+}
+
+.settings-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.settings-nav-item {
+  padding: 1rem;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.settings-nav-item.active {
+  border-left: 3px solid #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.settings-nav-item:hover {
+  background-color: rgba(40, 167, 69, 0.05);
+}
+
+.settings-content {
+  padding: 1rem;
+}

@@ -2,14 +2,14 @@
 
 .profile-page {
   padding: 40px;
-  background-color: #f0f2f5;
+  background-color: var(--background-color);
   font-family: 'Arial', sans-serif;
 }
 
 .profile-header-card {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--card-bg);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -40,7 +40,7 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid var(--card-bg);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -80,13 +80,13 @@
   margin: 0;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
 }
 
 .profile-header-info p {
   margin: 5px 0 15px;
   font-size: 1.2rem;
-  color: #666;
+  color: var(--text-color);
 }
 
 .edit-profile-btn {
@@ -115,7 +115,7 @@
 }
 
 .profile-card {
-  background-color: #fff;
+  background-color: var(--card-bg);
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -146,14 +146,14 @@
 }
 
 .stat-item {
-  background-color: #f8f9fa;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 .stat-item:hover {
-  background-color: #e9ecef;
+  background-color: var(--background-color);
 }
 
 .stat-icon {
@@ -166,12 +166,12 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
 }
 
 .stat-item span {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-color);
 }
 
 /* Achievements Card */
@@ -197,7 +197,7 @@
 .achievement-item p {
   margin: 0;
   font-size: 1rem;
-  color: #333;
+  color: var(--text-color);
   font-weight: bold;
 }
 
@@ -212,7 +212,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--card-border);
 }
 
 .activity-card li:last-child {
@@ -221,12 +221,12 @@
 
 .activity-card span {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 .activity-date {
   font-size: 0.9rem;
-  color: #999;
+  color: var(--text-color);
 }
 
 /* Responsive Design */

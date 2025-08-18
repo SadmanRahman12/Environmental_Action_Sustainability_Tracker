@@ -1,19 +1,19 @@
 .dashboard {
   padding: 40px;
-  background-color: #1a1a1a;
+  background-color: var(--background-color);
   font-family: 'Arial', sans-serif;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .dashboard-header h1 {
   font-size: 2.8em;
-  color: #ffffff;
+  color: var(--text-color);
   font-weight: bold;
 }
 
 .dashboard-header p {
   font-size: 1.2em;
-  color: #a9a9a9;
+  color: var(--text-color);
 }
 
 .dashboard-summary {
@@ -24,7 +24,7 @@
 }
 
 .summary-card {
-  background-color: #2a2a2a;
+  background-color: var(--card-bg);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@
 .summary-card h3 {
   margin-top: 0;
   font-size: 1.8em;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .summary-card p {
@@ -70,7 +70,7 @@
 }
 
 .feature-card {
-  background-color: #2a2a2a;
+  background-color: var(--card-bg);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -86,12 +86,12 @@
 .feature-card h3 {
   margin-top: 0;
   font-size: 1.8em;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .feature-card p {
   font-size: 1.1em;
-  color: #a9a9a9;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -128,7 +128,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid var(--card-border);
 }
 
 .dashboard-nav {
@@ -141,8 +141,8 @@
   margin: 0 15px;
   padding: 10px 20px;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #2a2a2a;
+  color: var(--text-color);
+  background-color: var(--card-bg);
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }

@@ -3,13 +3,13 @@
 /* General Styles */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f0f2f5;
+  background-color: var(--background-color);
 }
 
 .section-title-3 {
   font-weight: 700;
   margin-bottom: 3rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 /* Hero Section */
@@ -44,7 +44,7 @@ body {
 
 /* Impact Section */
 .impact-card-3 {
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   padding: 2rem;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -61,18 +61,27 @@ body {
   margin-bottom: 1rem;
 }
 
+.impact-card-3 .text-muted {
+  color: var(--text-color) !important;
+  opacity: 0.7;
+}
+
+.impact-card-3 h3 {
+  color: var(--text-color);
+}
+
 /* Features Section */
 .features-section-3 {
-  background-color: #1a2930;
+  background-color: var(--background-color);
 }
 
 .feature-card-3 {
-  background-color: #233640; 
+  background-color: var(--card-bg); 
   border: none;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .feature-card-3:hover {

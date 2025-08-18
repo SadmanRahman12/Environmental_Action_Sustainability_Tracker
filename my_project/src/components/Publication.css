@@ -1,6 +1,6 @@
 .publication-container {
   padding: 3rem 1rem;
-  background-color: #f8f9fa;
+  background-color: var(--background-color);
 }
 
 .publication-header {
@@ -11,18 +11,18 @@
 .publication-header h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: #343a40;
+  color: var(--text-color);
 }
 
 .publication-header p {
   font-size: 1.2rem;
-  color: #6c757d;
+  color: var(--text-color);
 }
 
 .featured-publication {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   margin-bottom: 3rem;
@@ -42,11 +42,20 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: var(--text-color);
 }
+
+.publication-card-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
 
 .featured-publication-content p {
   font-size: 1.1rem;
-  color: #6c757d;
+  color: var(--text-color);
   margin-bottom: 1.5rem;
 }
 
@@ -57,7 +66,7 @@
 }
 
 .publication-card {
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

@@ -13,29 +13,35 @@ import Dashboard from './components/Dashboard';
 import DashboardHome from './components/DashboardHome';
 import Profile from './components/Profile';
 import Settings from './components/Settings';
+import { ThemeProvider } from './context/ThemeContext';
+import ThemeWrapper from './components/ThemeWrapper';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
-        <Route path="/publication" element={<Publication />} />
-        <Route path="/publication/:slug" element={<PublicationDetail />} />
-        <Route path="/carbon-calculator" element={<CarbonCalculator />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/dashboard" element={<Dashboard name="John" />}>
-          <Route index element={<DashboardHome />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="settings" element={<Settings />} />
-        </Route>
-      </Routes>
-      <Footer />
-    </Router>
+    <ThemeProvider>
+      <ThemeWrapper>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/publication" element={<Publication />} />
+            <Route path="/publication/:slug" element={<PublicationDetail />} />
+            <Route path="/carbon-calculator" element={<CarbonCalculator />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/dashboard" element={<Dashboard name="John" />}>
+              <Route index element={<DashboardHome />} />
+              <Route path="profile" element={<Profile />} />
+              <Route path="settings" element={<Settings />} />
+            </Route>
+          </Routes>
+          <Footer />
+        </Router>
+      </ThemeWrapper>
+    </ThemeProvider>
   );
 }
 
