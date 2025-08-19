@@ -13,6 +13,7 @@ import Dashboard from './components/Dashboard';
 import DashboardHome from './components/DashboardHome';
 import Profile from './components/Profile';
 import Settings from './components/Settings';
+import RegistrationForm from './components/RegistrationForm';  // ✅ Added
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -28,6 +29,19 @@ function App() {
         <Route path="/publication/:slug" element={<PublicationDetail />} />
         <Route path="/carbon-calculator" element={<CarbonCalculator />} />
         <Route path="/signup" element={<SignUp />} />
+
+        <Route
+          path="/register"
+          element={
+            <div>
+              <h1 style={{ textAlign: "center", marginTop: "20px" }}>
+                 GreenZen - Registration
+              </h1>
+              <RegistrationForm />
+            </div>
+          }
+        />
+
         <Route path="/dashboard" element={<Dashboard name="John" />}>
           <Route index element={<DashboardHome />} />
           <Route path="profile" element={<Profile />} />
